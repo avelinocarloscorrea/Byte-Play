@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byte & Play - Tecnologia e Inovação</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="p-5 bg-gray-800 fixed top-0 w-full z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Byte & Play</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:text-yellow-500">Início</a></li>
+                    <li><a href="#services" class="hover:text-yellow-500">Serviços</a></li>
+                    <li><a href="#about" class="hover:text-yellow-500">Sobre Nós</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-500">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="h-screen flex items-center justify-center text-center">
+        <div>
+            <h2 class="text-4xl font-bold mb-4">Seu PC Gamer dos Sonhos Está Aqui!</h2>
+            <p class="text-lg text-gray-400">Montagem personalizada, reparos e suporte técnico especializado.</p>
+            <a href="#services" class="mt-6 inline-block bg-yellow-500 text-black px-6 py-2 rounded-lg shadow-lg hover:bg-yellow-600 transition">Saiba Mais</a>
+        </div>
+    </section>
+    
+    <section id="services" class="py-20 bg-gray-800 text-center">
+        <h2 class="text-3xl font-bold mb-6">Nossos Serviços</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 container mx-auto px-6">
+            <div class="p-6 bg-gray-700 rounded-lg shadow-lg hover:scale-105 transition">
+                <h3 class="text-xl font-bold mb-2">Montagem de PCs</h3>
+                <p class="text-gray-300">Criamos PCs sob medida para máximo desempenho.</p>
+            </div>
+            <div class="p-6 bg-gray-700 rounded-lg shadow-lg hover:scale-105 transition">
+                <h3 class="text-xl font-bold mb-2">Reparação</h3>
+                <p class="text-gray-300">Consertamos computadores e celulares com eficiência.</p>
+            </div>
+            <div class="p-6 bg-gray-700 rounded-lg shadow-lg hover:scale-105 transition">
+                <h3 class="text-xl font-bold mb-2">Suporte Técnico</h3>
+                <p class="text-gray-300">Assistência especializada para otimização e upgrades.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="py-20 text-center">
+        <h2 class="text-3xl font-bold mb-6">Sobre Nós</h2>
+        <p class="max-w-3xl mx-auto text-gray-300">Somos uma empresa especializada em tecnologia, oferecendo serviços de montagem de PCs gamer personalizados, reparação de computadores e celulares, além de assistência técnica completa.</p>
+    </section>
+    
+    <section id="contact" class="py-20 bg-gray-800 text-center">
+        <h2 class="text-3xl font-bold mb-6">Fale Conosco</h2>
+        <p class="text-gray-300">Entre em contato para suporte ou orçamento.</p>
+        <a href="mailto:contato@byteplay.com" class="mt-4 inline-block bg-yellow-500 text-black px-6 py-2 rounded-lg shadow-lg hover:bg-yellow-600 transition">Enviar E-mail</a>
+    </section>
+    
+    <footer class="py-6 bg-gray-900 text-center text-gray-500">
+        &copy; 2025 Byte & Play. Todos os direitos reservados.
+    </footer>
+    
+    <script>
+        gsap.from("h2", { duration: 1, y: -50, opacity: 0, ease: "power2.out", stagger: 0.3 });
+        gsap.from("p", { duration: 1, y: 20, opacity: 0, ease: "power2.out", delay: 0.5 });
+    </script>
+</body>
+</html>
